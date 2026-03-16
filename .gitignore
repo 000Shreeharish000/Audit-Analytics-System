@@ -1,0 +1,38 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python caches / local tooling state
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+.venv312/
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Runtime data (sensitive operational state)
+backend/app/data/platform_state.db
+backend/app/data/platform_state.db-shm
+backend/app/data/platform_state.db-wal
+backend/app/data/audit_trail.jsonl
+backend/app/data/backups/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

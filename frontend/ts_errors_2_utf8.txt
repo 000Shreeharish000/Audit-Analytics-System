@@ -1,0 +1,3 @@
+﻿src/components/graph/cyber-graph.tsx(588,11): error TS2322: Type 'Record<string, number>' is not assignable to type 'NodeTypes'.
+  'string' index signatures are incompatible.
+    Type 'number' is not assignable to type 'ComponentType<Pick<Node<Record<string, unknown>, string | undefined>, "width" | "height" | "id" | "data" | "sourcePosition" | "targetPosition" | "dragHandle" | "parentId"> & Required<...> & { ...; } & { ...; }>'.

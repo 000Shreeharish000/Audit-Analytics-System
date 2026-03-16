@@ -1,0 +1,31 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["F", "B"]
+ignore = ["B008", "B904"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["S101"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = false
+warn_unused_ignores = false
+ignore_missing_imports = true
+disallow_untyped_defs = false
+allow_untyped_globals = true
+follow_imports = "skip"
+disable_error_code = [
+    "attr-defined",
+    "arg-type",
+    "call-overload",
+    "assignment",
+    "return-value",
+    "var-annotated",
+    "union-attr",
+    "dict-item",
+    "no-any-return",
+]
+pretty = true
